@@ -1,3 +1,4 @@
+@import "fonts.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +7,15 @@
     body {
         @apply font-serif text-black bg-orange-50 leading-5 mb-2;
     }
+}
+@layer components {
     a {
-        @apply transition-all duration-100 underline hover:text-emerald-500 hover:decoration-current;
+        @apply font-bold decoration-2 underline;
+    }
+    .button {
+        @apply appearance-none no-underline py-2 px-4 text-white font-sans font-bold text-base rounded-full bg-emerald-500 hover:text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75 transition-all duration-200;
     }
 }
+/* @layer utilities {
+} */
+/* transition-all duration-100 underline hover:text-emerald-500 hover:decoration-2 */
