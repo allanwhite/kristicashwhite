@@ -2,16 +2,29 @@
 const { content } = Astro.props;
 import '../styles/global.css'
 // {content.title}
+import { SEO } from "astro-seo";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Dr. Kristi Cash White, LPC</title>
-	</head>
-	<body class="bg-orange-50 text-xl font-sans">
-		<slot />
-	</body>
+    <head>
+        <SEO
+            title="Dr. Kristi Cash White, LPC"
+            description="Dr. Kristi Cash White is an Oregon-licensed counselor and education professional with a Ph.D. in Counseling Education & Supervision"
+            openGraph = {{
+                basic: {
+                    title: "Dr. Kristi Cash White, LPC",
+                    type: "profile",
+                    image: "/images/opengraph-default.jpg",
+                }
+            }}
+        />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <!-- <title>Dr. Kristi Cash White, LPC</title> -->
+    </head>
+    <body class="bg-orange-50 text-xl font-sans">
+        <slot />
+    </body>
 </html>
