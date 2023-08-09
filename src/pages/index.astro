@@ -1,24 +1,22 @@
 ---
 // Component Imports
-import Button from '../components/Button.astro';
+// import Button from '../components/Button.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+import MainLayout from '../layouts/main.astro';
+// const title = "Dr. Kristi Cash White, LPC"
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+<MainLayout>
+	<div class="p-6 lg:p-6 grid gap-8 place-items-center h-screen content-center w-full md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto">
+		<div class="text-center">
+			<img class="w-48 h-48 mb-6 drop-shadow-xl rounded-full mx-auto" src="https://finishednotes.com/images/kristi%20portrait,%20square-512.webp" loading="lazy" alt="portrait image" width="256" height="256" />
+			<h1 class="font-serif italic text-2xl">Dr. Kristi Cash White, PhD, LPC</h1>
+			<h2 class="font-bold text-base tracking-widest uppercase">Licensed Counselor</h2>
 		</div>
-	</body>
-</html>
+		<p class="font-serif text-xl">
+			Dr. Kristi Cash White is an Oregon-licensed counselor and education professional with a Ph.D. in Counseling Education & Supervision from <a href="https://www.ucumberlands.edu/" title="University of the Cumberlands website">University of the Cumberlands</a>. She is an experienced counselor with specialities in play therapy, public speaking, supervising counselors-in-training, and teaching.
+		</p>
+		<a href="https://kristicashwhitecounseling.clientsecure.me" target="_blank" class="appearance-none py-2 px-4 bg-emerald-500 text-white font-sans rounded-full hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75 transition-all duration-200" title="Start your visit in a new window">Schedule a visit with Kristi</a>
+	</div>
+</MainLayout>

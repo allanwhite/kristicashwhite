@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-serif text-black bg-orange-50 leading-5 mb-2;
+    }
+    a {
+        @apply transition-all duration-100 underline hover:text-emerald-500 hover:decoration-current;
+    }
+}
