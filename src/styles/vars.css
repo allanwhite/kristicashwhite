@@ -1,0 +1,14 @@
+:root {
+    --a: 0.3;
+    --bg-light: rgb(255, 255, 255);
+    --bg-dark: rgb(29, 29, 31);
+    --white-a: rgba(255,255,255, 0.5);
+    --black-a: rgba(0,0,0, 0.5);
+    --link-color: hsla(288, 100%, 55%, 1);
+    --link-color: hsla(152, 89%, 46%, 1);
+    --link-hover: hsla(283, 100%, 36%, 1);
+    --primary-dark: hsl(325, 100%, 29%);
+    --alt-color: hsl(175, 100%, 47%);
+    --alt-color-dark: hsl(182, 100%, 33%);
+    --ui-speed: 200ms;
+}

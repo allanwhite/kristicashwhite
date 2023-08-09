@@ -1,3 +1,4 @@
+@import "vars.css";
 @import "fonts.css";
 @tailwind base;
 @tailwind components;
@@ -7,15 +8,35 @@
     body {
         @apply font-serif text-black bg-orange-50 leading-5 mb-2;
     }
-}
-@layer components {
     a {
-        @apply font-bold decoration-2 underline;
+        transition: all var(--ui-speed) ease-out;
+        @apply decoration-emerald-600 text-emerald-800 hover:text-emerald-500;
+        text-decoration: underline !important;
+        text-decoration-skip-ink: auto;
+        text-decoration-style: solid;
+        text-decoration-thickness: .125em;
+        text-underline-offset: 1.5px;
+        text-decoration-color: inherit;
+        /* text-decoration-color: var(--link-color); */
     }
+    p {
+        @apply font-serif text-xl mb-12;
+    }
+
+}
+/* @layer components {
+} */
+/* a {
+    @apply font-bold decoration-2 underline;
+} */
+
+@layer utilities {
     .button {
+        text-decoration: none !important;
         @apply appearance-none no-underline py-2 px-4 text-white font-sans font-bold text-base rounded-full bg-emerald-500 hover:text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75 transition-all duration-200;
     }
 }
-/* @layer utilities {
-} */
 /* transition-all duration-100 underline hover:text-emerald-500 hover:decoration-2 */
+p {
+    margin-bottom: 3rem;
+}
