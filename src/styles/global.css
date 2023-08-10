@@ -14,9 +14,9 @@
         /* text-decoration-color: var(--link-color); */
     }
     p {
-        @apply font-serif text-xl mb-12;
+        @apply font-serif text-xl mb-4;
     }
-
+    /* why isn't this overriding? */
 }
 /* @layer components {
 } */
@@ -28,9 +28,6 @@
     }
 }
 /* transition-all duration-100 underline hover:text-emerald-500 hover:decoration-2 */
-p {
-    margin-bottom: 3rem;
-}
 .content a {
     text-decoration: underline;
     text-decoration-skip-ink: auto;
@@ -38,4 +35,7 @@ p {
     text-decoration-thickness: .08em;
     text-underline-offset: 2px;
     text-decoration-color: inherit;
+}
+.content p {
+    margin-bottom: 0.8em;
 }
