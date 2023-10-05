@@ -10,16 +10,24 @@ import MainLayout from '../layouts/main.astro';
 import { Icon } from 'astro-icon';
 ---
 <MainLayout>
-    <section class="relative p-6 lg:p-6 grid gap-8 place-items-center lg:h-screen lg:content-center w-full md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto">
+    <section class="relative p-6 lg:p-10 lg:pb-24 grid gap-8 place-items-center lg:content-center w-full md:w-2/3 lg:w-1/2 xl:w-2/5 mx-auto">
         <div class="text-center">
             <img class="w-48 h-48 mb-6 drop-shadow-xl rounded-full mx-auto" src="/images/kristi-portrait-square-2022.webp" loading="lazy" alt="portrait image" width="256" height="256" />
-            <h1 class="font-serif italic text-2xl">Dr. Kristi Cash White, PhD, LPC</h1>
+            <h1 class="font-serif text-2xl">Dr. Kristi Cash White, PhD, LPC</h1>
             <h2 class="font-bold text-base tracking-widest uppercase">Licensed Counselor</h2>
         </div>
         <div class="content">
+        <p>In my practice, it seems a lot of the focus these days is on transition. From teenagers figuring out who they are and young adults struggling to make a way to those in mid-life facing an empty nest and retirees asking themselves, "What now?" I work with people as they navigate life stages and reimagine their personal identities.  I believe in the healing power of connection, vulnerability, and relationship. I primarily utilize Adlerian, Acceptance & Commitment, Narrative, and Mindfulness theories and techniques as means to connect with and aid my clients.</p>
+
+        <p>Although I do not take insurance, I work with clients to put together the necessary paperwork for pursuing insurance reimbursement as an out-of-network therapist. Please check with your insurance carrier for applicable reimbursement rates.</p>
+        <h2 class="font-bold text-base tracking-widest uppercase mb-2">About Dr. White</h2>
+        <p>I am an Oregon-licensed counselor, supervisor, and professor with a Ph.D. in Counseling Education & Supervision from the University of the Cumberlands. I have 25 years of experience in the field with specialties in play therapy, public speaking, supervising counselors-in-training, and teaching.</p>
+
+        <!--
         <p>
             <span class="font-bold font-sans">Dr. Kristi Cash White</span> is an Oregon-licensed counselor and education professional with a Ph.D. in Counseling Education & Supervision from <a href="https://www.ucumberlands.edu/" title="University of the Cumberlands website">University of the Cumberlands</a>. She is an experienced counselor with specialities in play therapy, public speaking, supervising counselors-in-training, and teaching.
         </p>
+        -->
         <p>
             <a href="https://finishednotes.com/" title="Podcast website">
                 <img class="transform hover:scale-110 transition-all rotate-6 rounded-sm w-24 h-24 lg:w-28 lg:h-28 ml-2 lg:ml-4 float-right" src="/images/aynfy-show-cover-1x.webp" alt="AYNFY Podcast" loading="lazy" />
@@ -28,7 +36,7 @@ import { Icon } from 'astro-icon';
         </p>
         </div>
         <div class="w-full">
-            <ul role="list" class="link-list items-center grid grid-cols-1 gap-3 text-base font-bold leading-4">
+            <ul role="list" class="link-list items-center grid grid-cols-1 gap-3 text-base font-bold leading-4 mb-6">
                 <li class="flex gap-x-3">
                     <Icon name="icon-mail" class="w-4 h-4 fill-current" />
                     <a href="mailto:counseling@kristicashwhite.net" title="send Kristi an email">Email Kristi</a>
@@ -48,6 +56,10 @@ import { Icon } from 'astro-icon';
                     </a>
                 </li>
             </ul>
+            <div class="content">
+                <p class="font-sans text-sm">Session cost: $180</p>
+                <p class="font-sans text-sm">Dr. White is available virtually for the state of Oregon, and in-person in East Portland.</p>
+            </div>
         </div>
         
     </section>

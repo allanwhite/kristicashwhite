@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply font-serif text-black bg-orange-50 leading-5 mb-2;
+        @apply font-serif text-black bg-orange-50 leading-5;
     }
     a {
         transition: all var(--ui-speed) ease-out;
@@ -14,7 +14,8 @@
         /* text-decoration-color: var(--link-color); */
     }
     p {
-        @apply font-serif text-xl mb-4;
+        @apply font-serif text-xl;
+        /* margin-bottom: 0.5rem; */
     }
     /* why isn't this overriding? */
 }
@@ -37,5 +38,5 @@
     text-decoration-color: inherit;
 }
 .content p {
-    margin-bottom: 0.8em;
+    margin-bottom: 0.7em;
 }
